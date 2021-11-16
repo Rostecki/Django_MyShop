@@ -39,3 +39,5 @@ class Product(models.Model):
     def get_absolute_url(self):
         pass
         # return reverse("_detail", kwargs={"pk": self.pk})
+
+# comment
