@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,11 +28,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Moje ustawienia
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+# Obsługa koszyka
+CART_SESSION_ID = 'cart'
+
 
 # Application definition
 
 INSTALLED_APPS = [
     'shop.apps.ShopConfig',
+    'cart.apps.CartConfig'
     
     'django.contrib.admin',
     'django.contrib.auth',
