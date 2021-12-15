@@ -39,7 +39,7 @@ CART_SESSION_ID = 'cart'
 
 INSTALLED_APPS = [
     'shop.apps.ShopConfig',
-    'cart.apps.CartConfig'
+    'cart.apps.CartConfig',
     
     'django.contrib.admin',
     'django.contrib.auth',
